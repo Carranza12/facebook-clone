@@ -1,0 +1,44 @@
+aside{
+    width: 300px;
+    background-color: var(--bg-primary-color);
+    height: calc(100vh - 60px);
+    padding: 20px;
+    padding-left: 50px;
+    @media(max-width:655px){
+        display: none;
+    }
+    h3{
+        color: white;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .contact{
+        position: relative;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 10px;
+        img{
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+        }
+        p{
+            font-size: 14px;
+            color: white;
+        }
+        .point{
+            position: absolute;
+            background-color: #31a146;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            left: 25px;
+            top: 25px;
+            span{
+                visibility: hidden;
+            }
+        }
+    }
+}

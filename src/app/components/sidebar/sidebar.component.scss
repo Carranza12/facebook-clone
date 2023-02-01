@@ -6,6 +6,9 @@ aside{
     display: flex;
     flex-direction: column;
     gap: 0px;
+    @media(max-width:1200px){
+        display: none;
+    }
     article{
         border-radius: 13px;
         height: 60px;
