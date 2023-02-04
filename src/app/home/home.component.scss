@@ -1,4 +1,30 @@
 :host{
-    display: flex;
-    flex-wrap: wrap;
+    background-color: var(--bg-primary-color);
+   width: 100%;
+    display: grid;
+    gap: 0px;
+    overflow: hidden;
+    grid-template-areas:
+    "toolbar toolbar toolbar"
+    "sidebar stories contacts"
+    "sidebar add-post contacts"
+    "sidebar post contacts"
+}
+app-toolbar{
+    grid-area: toolbar;
+}
+app-sidebar{
+    grid-area:sidebar;
+}
+app-stories{
+    grid-area:stories;    
+}
+app-contacts{
+    grid-area:contacts;
+}
+app-add-post{
+    grid-area:add-post;   
+}
+app-post{
+    grid-area:post;   
 }
